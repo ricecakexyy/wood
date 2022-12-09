@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home.activity.ThemeActivity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="270dp"-->
+<!--        android:src="@drawable/theme_bg"-->
+<!--        android:scaleType="fitStart"-->
+<!--        android:layout_alignParentBottom="true" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/h_culture_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="题材"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/h_culture_icon" />
+    </LinearLayout>
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:layout_below="@id/ll_top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/view_page"/>-->
+
+
+    <ListView
+        android:id="@+id/theme_line"
+        android:layout_below="@id/ll_top"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+
+</RelativeLayout>

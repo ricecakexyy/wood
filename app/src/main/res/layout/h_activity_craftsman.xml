@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.activity.CraftsmanActivity"
+    android:background="#F7F7F7">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_page"/>
+
+    <com.xlyj.wood.utils.StatusBarHeightView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:use_type="use_padding_top"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/h_culture_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="匠人"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/h_culture_icon" />
+    </LinearLayout>
+    </com.xlyj.wood.utils.StatusBarHeightView>
+
+</RelativeLayout>

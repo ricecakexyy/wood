@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity"
+    android:background="@drawable/home_bg">
+
+    <RelativeLayout
+        android:id="@+id/iv_frame"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/home_bg_1_3" />
+
+
+        <TextView
+            android:id="@+id/tv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_centerInParent="true"
+            android:text="入木三分"
+            android:gravity="center"
+            android:textSize="80sp"
+            android:textColor="#A65D46"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_culture"
+        android:layout_width="50dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/iv_frame"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@id/btn_vr_ar"
+        android:background="@drawable/home_bg_2_2"
+        android:text="木雕科普"
+        android:textColor="#e9bfb1"
+
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:lineSpacingExtra="5dp"/>
+
+    <Button
+        android:id="@+id/btn_vr_ar"
+        android:layout_width="50dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/iv_frame"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home_bg_2_2"
+        android:text="身临其境"
+        android:padding="10dp"
+        android:textColor="#e9bfb1"
+
+        android:textSize="17sp"
+        android:lineSpacingExtra="5dp"/>
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="50dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/iv_frame"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/btn_vr_ar"
+        android:background="@drawable/home_bg_2_2"
+        android:text="更多"
+        android:textColor="#e9bfb1"
+
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:lineSpacingExtra="5dp"/>
+    <ImageView
+        android:id="@+id/iv_stick_1"
+        android:layout_width="15dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/iv_frame"
+        android:layout_marginRight="75dp"
+        android:layout_toLeftOf="@id/iv_stick_2"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_stick_2" />
+
+    <ImageView
+        android:id="@+id/iv_stick_2"
+        android:layout_width="15dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/iv_frame"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_stick_2" />
+
+    <ImageView
+        android:id="@+id/iv_stick_3"
+        android:layout_width="15dp"
+        android:layout_height="175dp"
+        android:layout_below="@id/iv_frame"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@id/iv_stick_2"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_stick_2" />
+
+</RelativeLayout>

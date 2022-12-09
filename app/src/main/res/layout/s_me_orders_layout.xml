@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的订单"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_more_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/arrow"
+                android:text="查看全部订单"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            图标部分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_send_good_step1" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="待付款" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_send_good_step2" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="待发货" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_send_good_step3" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="待收货" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_send_good_step4" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="待评价" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="@color/light_gray"
+                app:cardElevation="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.xlyj.wood.ui.AutoPollRecyclerView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/auto_recycler_activity"
+                    tools:listitem="@layout/item_auto_recycler_activity"/>
+
+                <TextView
+                    android:id="@+id/tv_no_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没有最新物流"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

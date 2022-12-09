@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="35dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/rl_top">
+        <TextView
+            android:id="@+id/tv_material"
+            android:layout_toLeftOf="@id/iv_p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="35sp"
+            android:text="白杨树"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_p1"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/iv_top"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_p2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/iv_top"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_p3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:riv_oval="true"
+        android:layout_below="@id/rl_top"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:layout_below="@id/iv_p3"
+        android:lineSpacingExtra="8dp"
+        android:textColor="@color/black"/>
+</RelativeLayout>

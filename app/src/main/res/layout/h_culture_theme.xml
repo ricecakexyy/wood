@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:squint="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transplant"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+
+    <com.intrusoft.squint.DiagonalView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/theme_p1"
+        squint:diagonalDirection="right_to_left"
+        squint:angle="18"
+        squint:gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/iv_below"/>
+
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@id/iv_below"
+        android:text="一个"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_below="@id/iv_picture"
+        android:layout_toRightOf="@id/tv_theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_d1"
+           style="@style/theme_text_small_style"
+            android:layout_marginLeft="55dp"/>
+        <TextView
+            android:id="@+id/tv_d2"
+            style="@style/theme_text_small_style"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:id="@+id/tv_d3"
+            style="@style/theme_text_small_style"
+            android:layout_marginLeft="25dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8d6e63</color>
+    <color name="colorPrimaryDark">#a1887f</color>
+    <color name="colorAccent">#a1887f</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray">#363636</color>
+    <color name="m_gray">#555555</color>
+    <color name="light_gray">#eeeeee</color>
+
+    <color name="transplant">#00000000</color>
+    
+    <color name="brown50">#efebe9</color>
+    <color name="brown100">#d7ccc8</color>
+    <color name="brown200">#bcaaa4</color>
+    <color name="brown300">#a1887f</color>
+    <color name="brown400">#8d6e63</color>
+    <color name="brown500">#795548</color>
+    <color name="brown600">#6d4c41</color>
+    <color name="brown700">#5d4037</color>
+    <color name="brown800">#4e342e</color>
+    <color name="brown900">#3e2723</color>
+
+    <color name="h_point">#B0886E</color>
+    <color name="h_more_bg">#525252</color>
+
+    <color name="global_bg">#eeeff3</color>
+    <color name="line_color">#dadada</color>
+    <color name="write_smock">#F5F5F5</color>
+
+    <color name="m_bg">#F3F4F4</color>
+    <color name="login_button">#9B6C48</color>
+    <color name="login_button_press">#976036</color>
+    <color name="login_et_bg">#9F806D</color>
+
+    <color name="welcome_bg">#EEE5E5</color>
+    <color name="welcome_card_bg">#F4F2E5</color>
+
+    <color name="shop_search_bg">#F5F5F5</color>
+    <color name="shop_search_button_bg">#A9A9A9</color>
+
+    <color name="find_activity_btn_bg">#EDE1CB</color>
+
+    <color name="gold">#C49C60</color>
+
+    <color name="shop_main_color">#C58F4A</color>
+    <color name="shop_button_left">#C9AA76</color>
+    <color name="shop_button_right">#AE2920</color>
+
+    <color name="divider">#ffd2d2d2</color>
+</resources>

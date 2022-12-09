@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/s_cart_checkbox"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:text="红木工艺品东阳木雕仙鹤摆件"/>
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_below="@id/tv_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="红木工艺品东阳木雕仙鹤摆件"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/shop_button_left"
+            android:text="￥80.00"/>
+        <com.xlyj.wood.ui.AmountView
+            android:id="@+id/amount_view"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:btnWidth="30dp"
+            app:tvTextSize="4sp"
+            app:btnTextSize="17sp"
+            app:tvWidth="40dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

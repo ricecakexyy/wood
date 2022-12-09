@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+
+    <!--点赞-->
+    <LinearLayout
+        android:id="@+id/ll_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/f_publish_like_icon" />
+
+        <TextView
+            android:id="@+id/tv_like_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!--评论-->
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ll_like"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/f_publish_comment_icon" />
+
+        <TextView
+            android:id="@+id/tv_comment_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!--转发-->
+    <LinearLayout
+        android:id="@+id/ll_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ll_comment"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/f_publish_forward_icon" />
+
+        <TextView
+            android:id="@+id/tv_forward_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/f_publish_share_icon" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_share"
+        android:src="@drawable/f_publish_collection_icon" />
+
+
+</RelativeLayout>

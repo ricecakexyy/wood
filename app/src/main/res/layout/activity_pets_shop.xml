@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pet_shop_bg">
+    <com.xlyj.wood.utils.StatusBarHeightView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:use_type="use_padding_top"
+        android:orientation="vertical"
+        android:id="@+id/top"/>
+    <Button
+        android:layout_below="@id/top"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/pet_shop_btn_back"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:src="@mipmap/pet_shop_pets"
+        android:scaleType="fitCenter"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pet_shop_coinnum"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图鉴"
+        android:textSize="50sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>

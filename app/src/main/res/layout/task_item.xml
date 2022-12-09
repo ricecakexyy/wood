@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_pet_task_item"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/pet_task_bg1_shape">
+        <ImageView
+            android:id="@+id/iv_pet_task_item_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pet_task_bg1_shape"
+            android:layout_centerVertical="true"
+            android:layout_margin="7dp"/>
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/iv_pet_task_item_logo"
+            android:layout_centerVertical="true"
+            android:id="@+id/ll_task">
+            <TextView
+                android:id="@+id/tv_pet_task_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务1"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_pet_task_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="法发顺丰东方闪电尽快可能就可能就"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <Button
+            android:layout_toRightOf="@id/ll_task"
+            android:id="@+id/btn_pet_task_item"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:text="去完成"
+            android:background="@drawable/pet_task_btn_shape"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:orientation="vertical">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_point_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+
+    <!-- app:use_type="use_padding_top 向上paddingTop状态栏高度-->
+    <com.xlyj.wood.utils.StatusBarHeightView
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:use_type="use_padding_top"
+        android:orientation="vertical">
+        <!--这里放内容布局或View-->
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            android:text="点击跳过"
+            android:textSize="12sp"
+            android:background="@drawable/welcome_rounded_rectangle"
+            android:textColor="@android:color/white"/>
+    </com.xlyj.wood.utils.StatusBarHeightView>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:clipChildren="false">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#424c50"
+                android:id="@+id/layout1">
+
+                <com.xlyj.wood.utils.StatusBarHeightView
+                    android:id="@+id/top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="vertical"
+                    app:use_type="use_padding_top" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/top">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="20dp"
+                            app:riv_oval="true"
+                            android:src="@drawable/m_head_default"
+                            android:id="@+id/iv_head"/>
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户名"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="20dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/h_more_setting"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_msg_white_icon"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/layout1"
+                android:id="@+id/layout2">
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_alignParentBottom="true"
+                app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="￥0.00"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的余额"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0.8dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_color"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            tools:ignore="Suspicious0dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的积分"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0.8dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_color"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            tools:ignore="Suspicious0dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="代金券"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+            </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <include layout="@layout/s_me_orders_layout" />
+    <include layout="@layout/s_me_service_layout" />
+
+</LinearLayout>

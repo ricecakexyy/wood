@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/daily_recommend_bg">
+
+    <com.xlyj.wood.utils.StatusBarHeightView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:use_type="use_padding_top"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        app:riv_border_width="1dp"
+        app:riv_oval="true"
+            app:riv_border_color="@color/black"
+        android:src="@color/transplant"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/daily_recommend_picture1"
+            app:riv_oval="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_d1"
+                style="@style/theme_text_small_style"
+                android:layout_marginTop="60dp"
+                android:text="半是神形半鬼形"
+                android:textSize="23dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/tv_d2"
+                style="@style/theme_text_small_style"
+                android:layout_marginLeft="20dp"
+                android:text="一棚傀儡木雕成"
+                android:textSize="23dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

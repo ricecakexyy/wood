@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xlyj.wood">
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon, android:label, android:theme">
+        <activity android:name=".pet.PetShowActivity"/>
+        <activity android:name=".pet.PetsShopActivity"/>
+        <activity android:name=".pet.TestActivity"/>
+        <activity android:name=".game.carving.CarvingDetailActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"></activity>
+        <activity android:name=".PictureDetailsActivity" />
+        <activity android:name=".game.jigsaw_puzzle.activity.JigsawHomeActivity" />
+        <activity android:name=".game.carving.CarvingActivity" />
+        <activity
+            android:name=".daily_recommend.CalendarActivity"
+            android:theme="@style/h_more" />
+        <activity android:name=".daily_recommend.DailyRecommendActivity" />
+        <activity android:name=".game.jigsaw_puzzle.activity.JigsawPuzzleActivity" />
+        <activity android:name=".game.main_page.AllGameActivity" />
+        <activity android:name=".home.activity.CraftsmanDetailsActivity" />
+        <activity android:name=".home.activity.CraftsmanWorksActivity" />
+        <activity android:name=".home.activity.WorksDetailsActivity" />
+        <activity android:name=".home.activity.ThemeDetailsActivity" />
+        <activity android:name=".shop.activity.CommodityDetailsActivity" />
+        <activity android:name=".shop.activity.MyShopCenterActivity" />
+        <activity android:name=".find.activity.ArticleDetailsActivity" />
+        <activity android:name=".find.activity.RichEditActivity" />
+        <activity android:name=".find.activity.ActivityDetailsActivity" />
+        <activity android:name=".find.activity.PublishDetailsActivity" />
+        <activity android:name=".find.activity.VideoDetailsActivity" />
+        <activity android:name=".shop.ShopActivity" />
+        <activity
+            android:name=".Welcome2Activity"
+            android:launchMode="standard">
+
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        <activity android:name=".me.EditItemActivity" />
+        <activity android:name=".me.EditUserInfoActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".home.activity.CraftsmanActivity" />
+        <activity android:name=".home.activity.MaterialActivity" />
+        <activity android:name=".home.activity.ToolActivity" />
+        <activity android:name=".home.activity.ThemeActivity" />
+        <activity android:name=".me.MeActivity" />
+        <activity android:name=".find.FindActivity" />
+        <activity
+            android:name=".home.activity.MoreActivity"
+            android:theme="@style/h_more" />
+        <activity android:name=".home.activity.HistoryActivity" />
+        <activity android:name=".home.activity.CultureActivity" />
+        <activity android:name=".home.HomeActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:launchMode="standard">
+        </activity>
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.xlyj.wood.BmobContentProvider" />
+    </application>
+
+</manifest>

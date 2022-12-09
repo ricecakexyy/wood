@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="KeepCountdownView">
+        <attr name="arcColor" format="color" />
+        <attr name="numColor" format="color" />
+        <attr name="arcStrokeWidth" format="dimension" />
+        <attr name="numTextSize" format="dimension" />
+        <attr name="initDegree" format="integer" />
+        <attr name="maxNum" format="integer" />
+        <attr name="isCW" format="boolean" />
+        <attr name="radius" format="dimension" />
+        <attr name="plusNumAnimDuration" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="CountDownView">
+        <!--颜色-->
+        <attr name="ringColor" format="color" />
+        <!-- 进度文本的字体大小 -->
+        <attr name="progressTextSize" format="dimension" />
+        <!-- 圆环宽度 -->
+        <attr name="ringWidth" format="float" />
+        <!--进度文本颜色-->
+        <attr name="progressTextColor" format="color"/>
+        <!--倒计时-->
+        <attr name="countdownTime" format="integer"/>
+    </declare-styleable>
+</resources>

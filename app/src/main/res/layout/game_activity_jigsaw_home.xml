@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game.jigsaw_puzzle.activity.JigsawHomeActivity"
+    android:background="@drawable/game_jigsaw_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <com.xlyj.wood.utils.StatusBarHeightView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:use_type="use_padding_top"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/brown500"
+        android:layout_marginTop="70dp"
+        android:text="木雕拼图"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:src="@drawable/game_jigsaw_home_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_start_new_game"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/game_jigsaw_btn"
+            android:text="新游戏"
+            android:textSize="25sp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/brown800"/>
+            <Button
+                android:id="@+id/btn_continue_game"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/game_jigsaw_btn"
+                android:text="继续游戏"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/brown800"/>
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/game_jigsaw_btn"
+                android:text="关卡选择"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/brown800"/>
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/game_jigsaw_btn"
+                android:text="设置"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/brown800"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

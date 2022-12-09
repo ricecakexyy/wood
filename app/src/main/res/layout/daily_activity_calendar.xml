@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:orientation="horizontal"
+    tools:context=".daily_recommend.CalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--            左边卡片日历-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/calendar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020"
+                        android:textColor="#3EC49C60"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:textSize="22sp"/>
+                <TextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="入 木 三 分"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/daily_recommend_bg" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/iv_picture"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/daily_recommend_picture1"
+                            app:riv_oval="true" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/iv_picture"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/tv_d1"
+                                style="@style/theme_text_small_style"
+                                android:layout_marginTop="40dp"
+                                android:lineSpacingExtra="8dp"
+                                android:text="半是神形半鬼形"
+                                android:textColor="@color/gray"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/tv_d2"
+                                style="@style/theme_text_small_style"
+                                android:layout_marginLeft="15dp"
+                                android:lineSpacingExtra="8dp"
+                                android:text="一棚傀儡木雕成"
+                                android:textColor="@color/gray"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9月"
+                                    android:textColor="@color/gold"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="8"
+                                    android:textColor="@color/gold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/gold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/gold"
+                                android:ems="1"
+                                android:lineSpacingExtra="4dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="2dp"
+                                android:text="星期二"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gold"
+                            android:text="农历七月廿一"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right|bottom"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/qrcord" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="扫码了解更多"
+                            android:textColor="@color/black"
+                            android:textSize="7sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--            右边分享栏-->
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/daily_share_to_pengyouquan" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/daily_share_to_weinxin" />
+            <ImageView
+                android:id="@+id/iv_qq"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/daily_share_to_qq" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/daily_share_to_weibo" />
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/daily_download" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

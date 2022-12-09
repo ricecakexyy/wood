@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context=".shop.ShopActivity">
+
+    <!--中部-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/content">
+    </FrameLayout>
+
+    <!--底部导航拦-->
+    <RadioGroup
+        android:id="@+id/rg_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="3dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/shop_bottom_nav_style"
+            android:drawableTop="@drawable/shop_nav_home_selector"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rb_category"
+            style="@style/shop_bottom_nav_style"
+            android:drawableTop="@drawable/shop_nav_category_selector"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/shop_bottom_nav_style"
+            android:drawableTop="@drawable/shop_nav_cart_selector"
+            android:text="购物车"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/shop_bottom_nav_style"
+            android:drawableTop="@drawable/shop_nav_me_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+</LinearLayout>

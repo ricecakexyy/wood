@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    tools:context=".Welcome2Activity">
+
+    <RelativeLayout
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@drawable/welcome_rounded_rectangle_white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_shuxian"
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tv_skip"
+            android:background="@color/black"
+            android:text="跳过"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tv_shuxian"
+            android:text="3s"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="280dp"
+        android:src="@drawable/welcome_bg_1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/welcome_card_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_skip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/poetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/theme_text_small_style"
+                android:textSize="24sp"
+                android:lineSpacingExtra="9dp"
+                android:layout_marginLeft="15dp"
+                android:text="对凤连鸡一何小"/>
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/theme_text_small_style"
+                android:textSize="24sp"
+                android:lineSpacingExtra="9dp"
+                android:layout_marginLeft="10dp"
+                android:text="阴阳雕刻花如鸟"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="——钱起"
+            android:layout_below="@id/poetry"
+            android:layout_alignRight="@id/poetry"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_below="@id/tv_3"
+            android:layout_alignRight="@id/tv_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/welcome_icon"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

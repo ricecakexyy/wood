@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常用功能"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_more_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/arrow"
+                android:text="查看全部功能"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            图标部分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_msg_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="我的消息" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_coupon_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="优惠券" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_jifen_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="积分兑换" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_collection_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="我的收藏" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_location_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="收货地址" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_kefu_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="客服" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_history_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="浏览记录" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/me_item_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/s_me_biaodan_icon" />
+
+                        <TextView
+                            style="@style/me_item_text_style"
+                            android:text="我的表单" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

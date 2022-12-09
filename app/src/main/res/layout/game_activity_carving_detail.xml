@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game.carving.CarvingDetailActivity"
+    android:background="@drawable/game_carving_bg">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <com.xlyj.wood.game.carving.MyCarvingBoard
+            android:id="@+id/iv_carving_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:src="@drawable/game_carving_pattern10"/>
+
+        <com.xlyj.wood.game.carving.MyView
+            android:id="@+id/iv_my_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transplant"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/game_carving_board"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_board"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/game_carving_pattern10"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv_board"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_carving_btn"
+            android:text="撤销"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_back"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_carving_btn"
+            android:text="完成"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
