@@ -1,0 +1,99 @@
+com/baidu/ai/edge/ui/view/ResultListView.java
+ com.baidu.ai.edge.ui.view.ResultListView
+ com.baidu.ai.edge.ui.view.ResultListView$1
+com/baidu/ai/edge/ui/view/model/BaseRectBoundResultModel.java
+ com.baidu.ai.edge.ui.view.model.BaseRectBoundResultModel
+com/baidu/ai/edge/ui/camera/CameraProxy1.java
+ com.baidu.ai.edge.ui.camera.CameraProxy1
+ com.baidu.ai.edge.ui.camera.CameraProxy1$1
+ com.baidu.ai.edge.ui.camera.CameraProxy1$2
+com/baidu/ai/edge/ui/view/PreviewDecoratorView.java
+ com.baidu.ai.edge.ui.view.PreviewDecoratorView
+com/baidu/ai/edge/ui/view/model/BaseResultModel.java
+ com.baidu.ai.edge.ui.view.model.BaseResultModel
+com/baidu/ai/edge/ui/camera/CameraListener.java
+ com.baidu.ai.edge.ui.camera.CameraListener
+ com.baidu.ai.edge.ui.camera.CameraListener$CommonListener
+ com.baidu.ai.edge.ui.camera.CameraListener$TakePictureListener
+com/baidu/ai/edge/ui/util/ThreadPoolManager.java
+ com.baidu.ai.edge.ui.util.ThreadPoolManager
+ com.baidu.ai.edge.ui.util.ThreadPoolManager$1
+com/baidu/ai/edge/ui/layout/PreviewFrameLayout.java
+ com.baidu.ai.edge.ui.layout.PreviewFrameLayout
+com/baidu/ai/edge/ui/MainActivity.java
+ com.baidu.ai.edge.ui.MainActivity
+com/baidu/ai/edge/ui/view/model/BasePolygonResultModel.java
+ com.baidu.ai.edge.ui.view.model.BasePolygonResultModel
+com/baidu/ai/edge/ui/util/ImageUtil.java
+ com.baidu.ai.edge.ui.util.ImageUtil
+com/baidu/ai/edge/ui/util/StringUtil.java
+ com.baidu.ai.edge.ui.util.StringUtil
+com/baidu/ai/edge/ui/view/model/OcrViewResultModel.java
+ com.baidu.ai.edge.ui.view.model.OcrViewResultModel
+com/baidu/ai/edge/ui/camera/ICameraProxy.java
+ com.baidu.ai.edge.ui.camera.ICameraProxy
+com/baidu/ai/edge/ui/view/model/ClassifyResultModel.java
+ com.baidu.ai.edge.ui.view.model.ClassifyResultModel
+com/baidu/ai/edge/ui/view/ResultMaskView.java
+ com.baidu.ai.edge.ui.view.ResultMaskView
+ com.baidu.ai.edge.ui.view.ResultMaskView$1
+ com.baidu.ai.edge.ui.view.ResultMaskView$2
+com/baidu/ai/edge/ui/layout/CameraLayout.java
+ com.baidu.ai.edge.ui.layout.CameraLayout
+com/baidu/ai/edge/ui/util/UiLog.java
+ com.baidu.ai.edge.ui.util.UiLog
+com/baidu/ai/edge/ui/view/adapter/ClassifyResultAdapter.java
+ com.baidu.ai.edge.ui.view.adapter.ClassifyResultAdapter
+com/baidu/ai/edge/ui/layout/OperationFrameLayout.java
+ com.baidu.ai.edge.ui.layout.OperationFrameLayout
+com/baidu/ai/edge/ui/view/model/SegmentResultModel.java
+ com.baidu.ai.edge.ui.view.model.SegmentResultModel
+com/baidu/ai/edge/ui/BuildConfig.java
+ com.baidu.ai.edge.ui.BuildConfig
+com/baidu/ai/edge/ui/view/PreviewView.java
+ com.baidu.ai.edge.ui.view.PreviewView
+ com.baidu.ai.edge.ui.view.PreviewView$1
+ com.baidu.ai.edge.ui.view.PreviewView$2
+com/baidu/ai/edge/ui/view/adapter/DetectResultAdapter.java
+ com.baidu.ai.edge.ui.view.adapter.DetectResultAdapter
+com/baidu/ai/edge/ui/activity/MainActivity.java
+ com.baidu.ai.edge.ui.activity.MainActivity
+ com.baidu.ai.edge.ui.activity.MainActivity$1
+ com.baidu.ai.edge.ui.activity.MainActivity$1$1
+ com.baidu.ai.edge.ui.activity.MainActivity$1$1$1
+ com.baidu.ai.edge.ui.activity.MainActivity$10
+ com.baidu.ai.edge.ui.activity.MainActivity$11
+ com.baidu.ai.edge.ui.activity.MainActivity$12
+ com.baidu.ai.edge.ui.activity.MainActivity$13
+ com.baidu.ai.edge.ui.activity.MainActivity$14
+ com.baidu.ai.edge.ui.activity.MainActivity$15
+ com.baidu.ai.edge.ui.activity.MainActivity$15$1
+ com.baidu.ai.edge.ui.activity.MainActivity$15$1$1
+ com.baidu.ai.edge.ui.activity.MainActivity$16
+ com.baidu.ai.edge.ui.activity.MainActivity$17
+ com.baidu.ai.edge.ui.activity.MainActivity$18
+ com.baidu.ai.edge.ui.activity.MainActivity$19
+ com.baidu.ai.edge.ui.activity.MainActivity$2
+ com.baidu.ai.edge.ui.activity.MainActivity$2$1
+ com.baidu.ai.edge.ui.activity.MainActivity$20
+ com.baidu.ai.edge.ui.activity.MainActivity$21
+ com.baidu.ai.edge.ui.activity.MainActivity$22
+ com.baidu.ai.edge.ui.activity.MainActivity$3
+ com.baidu.ai.edge.ui.activity.MainActivity$4
+ com.baidu.ai.edge.ui.activity.MainActivity$5
+ com.baidu.ai.edge.ui.activity.MainActivity$6
+ com.baidu.ai.edge.ui.activity.MainActivity$6$1
+ com.baidu.ai.edge.ui.activity.MainActivity$7
+ com.baidu.ai.edge.ui.activity.MainActivity$8
+ com.baidu.ai.edge.ui.activity.MainActivity$9
+com/baidu/ai/edge/ui/layout/ActionBarLayout.java
+ com.baidu.ai.edge.ui.layout.ActionBarLayout
+com/baidu/ai/edge/ui/activity/ResultListener.java
+ com.baidu.ai.edge.ui.activity.ResultListener
+ com.baidu.ai.edge.ui.activity.ResultListener$ClassifyListener
+ com.baidu.ai.edge.ui.activity.ResultListener$DetectListener
+ com.baidu.ai.edge.ui.activity.ResultListener$ListListener
+ com.baidu.ai.edge.ui.activity.ResultListener$OcrListener
+ com.baidu.ai.edge.ui.activity.ResultListener$SegmentListener
+com/baidu/ai/edge/ui/view/model/DetectResultModel.java
+ com.baidu.ai.edge.ui.view.model.DetectResultModel
