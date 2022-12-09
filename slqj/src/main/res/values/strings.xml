@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">wood</string>
+    <string name="stl_load_progress_message">请等一会.</string>
+    <string name="stl_load_progress_title">STL 文件加载中...</string>
+    <string name="start_ui_activity">开始使用</string>
+    <string name="title_activity_xeye">XeyeActivity</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SLQJ.Museum.ExhibitionHallShowActivity"
+    android:background="#1a1a1a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+>
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/bn_ex"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/ll_ex_voiceplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:background="@drawable/exhall_btn_shapre"
+                    android:padding="2dp"
+                    android:layout_margin="5dp">
+                    <ImageButton
+
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="1dp"
+                        android:background="@mipmap/voice_play"
+                        android:scaleType="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="博客解说"
+                        android:textColor="#999999"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#C49C60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="锦绣江南"
+                    android:textSize="22sp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#bbbbbb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设计：徐经彬"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:textColor="#bbbbbb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="制作：徐经彬工作室"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:textColor="#bbbbbb"
+                    android:id="@+id/tv_eh_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      东阳木雕大型台屏《锦绣江南》以典型化的艺术构思，描写了江南丘陵地区农村风光旖旎的自然环境和农民春播夏收的过程。耕耘、插秧、收割的劳作，荷塘飘香、小桥流水、茶园呈碧、牧童放歌、老农晚归的乡曲，民居鳞次、古樟伟岸、松篁滴翠的神韵，如此等等，作者皆能随物婉转，与心徘徊，对生活加以艺术的抽象，又以具象的形式呈现出来，达到写物、抒情、写意的高度统一和镕古铄今、咫尺千里的艺术效果。其底座用缅甸花梨制作而成，薄浮雕博古图案，二门二斗骨几，中间连接格子斗花。这本身就是一件高贵华丽的作品。该作品2009年在中国工艺美术“百花奖”（深圳）优秀作品评选中获金奖。"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+            
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

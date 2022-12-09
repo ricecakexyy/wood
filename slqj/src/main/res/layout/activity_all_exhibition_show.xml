@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SLQJ.Museum.AllExhibitionShowActivity"
+    android:background="#1a1a1a"
+    android:orientation="vertical">
+    <include layout="@layout/layout_museum_allex_titlebar" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_all_ex"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#282828">
+            <ImageView
+                android:id="@+id/iv_de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/tv_de_name"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="孔子的时代"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#cccccc"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#666666"
+               />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@mipmap/slqj_allex_eye"/>
+                    <TextView
+                        android:id="@+id/tv_de_looks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#666666"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_de_lochall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#666666"
+                    android:text="大师厅"
+                    android:textSize="10sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/de_tv_shapre"/>
+                <TextView
+                    android:id="@+id/tv_de_locf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="1F"
+                    android:textSize="10sp"
+                    android:textColor="#666666"
+                    android:layout_toLeftOf="@+id/tv_de_lochall"
+                    android:background="@drawable/de_tv_shapre"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

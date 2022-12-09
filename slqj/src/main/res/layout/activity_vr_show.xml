@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SLQJ.VRShow.VrShowActivity"
+    android:id="@+id/drawer_layout_home">
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.vr.sdk.widgets.pano.VrPanoramaView
+            android:id="@+id/pano_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vr_btn_shape"
+            android:id="@+id/btn_map"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/map_gotomap"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国木雕博物馆"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <!-- 左侧滑动栏 -->
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/vr_menu2"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="500dp"
+            android:layout_centerVertical="true">
+            <ScrollView
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_marginTop="180dp"
+                        android:id="@+id/im_vr1"
+                        android:layout_width="200dp"
+                        android:layout_height="131dp"
+                        android:background="@mipmap/vr_museum1"/>
+                    <ImageView
+                        android:id="@+id/im_vr2"
+                        android:layout_width="200dp"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@mipmap/vr_museum2"/>
+                    <ImageView
+                        android:id="@+id/im_vr3"
+                        android:layout_width="200dp"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@mipmap/vr_museum1"/>
+                    <ImageView
+                        android:id="@+id/im_vr4"
+                        android:layout_width="200dp"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@mipmap/vr_museum1"
+                        android:layout_marginBottom="80dp"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

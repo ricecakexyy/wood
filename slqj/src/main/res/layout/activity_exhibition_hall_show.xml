@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SLQJ.Museum.ExhibitionHallShowActivity"
+    android:background="#1a1a1a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/exhall_history" />
+                        <LinearLayout
+                            android:id="@+id/ll_voiceplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:background="@drawable/exhall_btn_shapre"
+                            android:padding="2dp"
+                            android:layout_margin="5dp">
+                            <ImageButton
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_margin="1dp"
+                                android:background="@mipmap/voice_play"
+                                android:scaleType="center"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="博客解说"
+                                android:textColor="#666666"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="“刀木春秋”\n——中国木雕历史展厅"
+                    android:textSize="20sp"
+                    android:textColor="#C49C60"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_eh_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      从原始社会探寻木雕起源，遴选各个历史时期的经典木雕文物作品，全面重现中国木雕的发展历史和辉煌过去。\n
+      走在中国木雕博物馆中，犹如跨入了时光的隧道，在瑞禽神兽的轩窗栋梁、诗情画意的桌几床榻上，刀木雕琢的方寸之间，一股浓厚的中式人文气息，扑面而来，
+  仿佛在诉说华夏千年儿女的智慧故事，让人流连忘返。同时也是向世人展示中国木雕发展演变和木雕精品的生动教科书，对于打造国家级文化品牌、丰富文化旅游内涵、
+  促进中国木雕产业的发展都具有重要意义。"
+                    android:textSize="15sp"
+                    android:textColor="#bbbbbb"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#282828">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="厅\n内\n藏\n品"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#bbbbbb"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ehs_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

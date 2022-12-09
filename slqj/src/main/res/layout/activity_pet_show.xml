@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".PetShowActivity">
+
+    <ImageView
+        android:id="@+id/iv_pet"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/btns"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/pet_0" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView_huafei"
+        android:layout_width="150dp"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/huafei"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_pet"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@mipmap/chat_leftbubble"
+        android:paddingLeft="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_chatcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="sad大所发撒所多撒大撒所范德萨范德萨范德萨范德萨大声道"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_feed"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:onClick="Feed"
+                android:text="投食" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:onClick="Chat"
+                android:text="聊天" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_sing"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:onClick="sing"
+                android:text="唱歌" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/e_tab"
+            style="@style/TabRadioButton"
+            android:text="藏品"
+            android:drawableTop="@mipmap/museum_btn1"
+            android:textSize="16sp"
+            android:textColor="#3d2a1e"/>
+
+        <RadioButton
+            android:id="@+id/map_tab"
+            style="@style/TabRadioButton"
+            android:text="导览"
+            android:drawableTop="@mipmap/museum_btn2"
+            android:textSize="16sp"
+            android:textColor="#3d2a1e"/>
+
+        <RadioButton
+            android:id="@+id/vr_tab"
+            style="@style/TabRadioButton"
+            android:text="VR"
+            android:drawableTop="@mipmap/museum_btn3"
+            android:textSize="16sp"
+            android:textColor="#3d2a1e"/>
+
+        <RadioButton
+            android:id="@+id/intro_tab"
+            style="@style/TabRadioButton"
+            android:text="指南"
+            android:drawableTop="@mipmap/museum_btn4"
+            android:textSize="16sp"
+            android:textColor="#3d2a1e"/>
+
+    </RadioGroup>
+</LinearLayout>

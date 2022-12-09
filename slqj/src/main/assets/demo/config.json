@@ -1,0 +1,14 @@
+{
+    "product": "EasyDL", 
+    "ak": null, 
+    "nType": 1, 
+    "apiUrl": null, 
+    "thresholdRec": 0.3, 
+    "sk": null, 
+    "model_version": 50639, 
+    "model_type": 1, 
+    "soc": [
+        "arm"
+    ], 
+    "model_name": "\u8bc6\u522b\u6728\u96d5\u4f5c\u54c1V1"
+}

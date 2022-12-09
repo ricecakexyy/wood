@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SLQJ.Museum.MapActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="60dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_map_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_maptitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="中国木雕博物馆"
+                    android:textSize="24sp"
+                    android:padding="10dp"
+                    android:textColor="#3d2a1e"/>
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_mapaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="浙江省-金华市-东阳市-白云街道世茂大道180号"
+                            android:textColor="#3d2a1e"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/map_time" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#3d2a1e"
+                                android:layout_gravity="center_vertical"
+                                android:text="营业时间:09:00-17:00(夏令时);09:00-16:30(冬令时)" />
+
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="10dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/map_img1" />
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="10dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/map_img2" />
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="10dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/map_img3" />
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/tv_mapcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#3d2a1e"
+                            android:text="      中国木雕博物馆位于位于浙江省东阳市，是首个国字号博物馆。总建筑面积近2.6万平方米，有中国木雕历史展厅、中国木雕与社会生活展厅、当代中国木雕大师展厅、世界木雕展厅四大木雕主题展区，并依托东阳竹编设置中国竹工艺专题展厅及临时展厅，是一座历史与艺术并重，集收藏、展览、研究、文化交流于一体的博物馆。2014年10月正式对外开放，2014年世界工艺文化节主场馆。" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_share"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/map_share" />
+
+                    <ImageView
+                        android:layout_toRightOf="@+id/iv_share"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/map_collect" />
+
+                    <LinearLayout
+                        android:id="@+id/map_gotonavi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/map_btn_shapre"
+                        android:layout_alignParentRight="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/map_navigation"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="到这去"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:background="#fff">
+    <ImageView
+        android:id="@+id/iv_eh"
+        android:layout_width="200dp"
+        android:layout_height="135dp"/>
+    <TextView
+        android:id="@+id/tv_eh_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="孔子的时代"
+        android:textSize="16sp"
+        android:textColor="#3d2a1e"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_eh_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展厅的位置：2F"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3d2a1e"
+        />
+
+</LinearLayout>

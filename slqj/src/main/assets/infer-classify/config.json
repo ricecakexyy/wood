@@ -1,0 +1,32 @@
+{
+    "soc": [
+        "arm"
+    ], 
+    "scale": [
+        0.017124753831663668, 
+        0.01750700280112045, 
+        0.017429193899782137
+    ], 
+    "means": [
+        123.675, 
+        116.28, 
+        103.53
+    ], 
+    "labels": [
+        "非木雕作品",
+        "锦绣江南",
+        "白蛇传"
+    ], 
+    "mid": 27097, 
+    "model_type": 1, 
+    "height": 224, 
+    "product": "EasyDL", 
+    "width": 224, 
+    "channelOrder": "CHW", 
+    "model_file_asset_path": "infer-classify/params.enc", 
+    "is_opt_model": true, 
+    "rid": 50639, 
+    "colorFormat": "RGB", 
+    "thresholdRec": 0.3, 
+    "nType": 1
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_home_3d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bk_black"
+    tools:context=".SLQJ.Show3d.Show3dActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.study.xuan.gifshow.widget.stlview.widget.STLView
+            android:id="@+id/stl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="60dp"
+        app:behavior_hideable="false"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_3d_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/intro3d_bg"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_modeltitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="连年有鱼"
+                    android:textSize="24sp"
+                    android:textColor="#3d2a1e"
+                    />
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/tv_modelcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3d2a1e"
+                    android:text="年年有鱼 [1]  是“年年有余”的谐音，
+                可谓中国传统吉祥祈福最具代表的语言之一，
+                若用图画表示则可看作是传统吉祥符号。图中要有莲花或莲藕，
+                还要有鱼，即“莲连有鱼”。代表生活富足，每年都有多余的财富及食粮！" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
